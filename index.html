@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>✨ Todo Application</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button class="add-btn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Search -->
+        <input type="text" id="searchTask"
+        placeholder="Search Task..."
+        onkeyup="searchTask()">
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn all"
+            onclick="filterTasks('all')">
+            All
+            </button>
+
+            <button class="filter-btn completed"
+            onclick="filterTasks('completed')">
+            Completed
+            </button>
+
+            <button class="filter-btn pending"
+            onclick="filterTasks('pending')">
+            Pending
+            </button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>Name:</strong>SAHANA S</p>
+            <p><strong>Register Number:</strong>212225230236</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
